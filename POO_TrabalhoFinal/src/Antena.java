@@ -1,8 +1,11 @@
+import java.util.Queue;
+
 public class Antena {
 
 	private int capSimultanea;
 	private int capFila;
 	private int capTotal = capSimultanea + capFila;
+	private Queue<Solicitacao> fila;
 	
 	public Antena(int capSimultanea, int capFila) {
 		this.capSimultanea = capSimultanea;
